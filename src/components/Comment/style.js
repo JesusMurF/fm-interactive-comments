@@ -6,7 +6,7 @@ export const CommentHeader = tw.div`
 `
 
 export const StyledComment = tw.div`
-  h-48
+  h-auto
   w-3/4
   rounded-md
   text-2xl
@@ -48,4 +48,31 @@ export const StyledCommentText = tw.div`
   p-4
   text-sm
   text-gray-500
+`
+export const StyledCommentFooter = tw.footer`
+  flex
+  h-auto
+`
+
+export const StyledLikeButtons = tw.div`
+  flex  
+  flex-1
+  items-center
+  p-4
+`
+
+export const StyledDeleteButton = tw.span`
+  flex
+  h-auto
+  items-center
+  text-sm
+  px-2
+`
+
+export const StyledEditButton = tw.span`
+  flex
+  h-auto
+  items-center
+  text-sm
+  px-2
 `

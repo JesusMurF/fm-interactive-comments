@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-import CommentsContainer from "./components/CommentsContainer";
+import React, { useState } from 'react'
+import CommentsContainer from './components/CommentsContainer/CommentsContainer'
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <CommentsContainer></CommentsContainer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

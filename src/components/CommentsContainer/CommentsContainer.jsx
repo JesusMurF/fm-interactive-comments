@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Comment } from '../Comment/Comment'
+import ReplyComment from '../ReplyComment/ReplyComment'
 import { StyledCommentsContainer } from './style'
 
 const CommentsContainer = () => {
@@ -9,6 +10,7 @@ const CommentsContainer = () => {
       <Comment></Comment>
       <Comment></Comment>
       <Comment></Comment>
+      <ReplyComment></ReplyComment>
     </StyledCommentsContainer>
   )
 }

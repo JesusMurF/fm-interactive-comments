@@ -9,6 +9,7 @@ export const StyledReplyContainer = tw.div`
   justify-center
   rounded-md
   flex-col
+  md:w-1/2
 `
 
 export const StyledCommentInput = tw.textarea`
@@ -23,10 +24,12 @@ export const StyledCommentInput = tw.textarea`
   ring-1
   focus:outline-none
   focus:ring-2
-  focus:border-sky-500 
   focus:ring-sky-500 
   placeholder:text-gray-500
   hover:ring-2
+  transition 
+  ease-in-out 
+  delay-300
 `
 
 export const StyledReplyFooter = tw.footer`

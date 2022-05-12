@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import {
-  CommentHeader,
+  StyledCommentHeader,
   StyledComment,
   StyledCommentFooter,
   StyledCommentText,
@@ -11,18 +11,21 @@ import {
   StyledLikeButtons,
   StyledTime,
   StyledUsername,
+  StyledLoggedUserBadge,
 } from './style'
 
-export const Comment = () => {
+export const Comment = ({ isReply = false, user = false }) => {
   return (
-    <StyledComment>
-      <CommentHeader>
+    <StyledComment $primary={isReply}>
+      {isReply && <hr className="float-left -m-4 h-[110%] border-l-2" />}
+      <StyledCommentHeader>
         <StyledImageContainer>
           <StyledImage src="./images/avatars/image-amyrobson.png" />
         </StyledImageContainer>
         <StyledUsername>Amy Robson</StyledUsername>
+        {user && <StyledLoggedUserBadge>you</StyledLoggedUserBadge>}
         <StyledTime>one month ago</StyledTime>
-      </CommentHeader>
+      </StyledCommentHeader>
       <StyledCommentText>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
         provident, nostrum doloremque similique natus recusandae, esse modi
@@ -39,18 +42,37 @@ export const Comment = () => {
             -
           </button>
         </StyledLikeButtons>
-        <StyledDeleteButton role="button">
-          <img
-            className="h-4"
-            src="./icons/icon-delete.svg"
-            alt="Delete comment"
-          />
-          <p className="px-2">Delete</p>
-        </StyledDeleteButton>
-        <StyledEditButton role="button" onClick={() => console.log('click')}>
-          <img className="h-4" src="./icons/icon-edit.svg" alt="Edit comment" />
-          <p className="px-2">Edit</p>
-        </StyledEditButton>
+        {user ? (
+          <Fragment>
+            <StyledDeleteButton role="button">
+              <img
+                className="h-4"
+                src="./icons/icon-delete.svg"
+                alt="Delete comment"
+              />
+              <p className="px-2">Delete</p>
+            </StyledDeleteButton>
+            <StyledEditButton
+              role="button"
+              onClick={() => console.log('click')}>
+              <img
+                className="h-4"
+                src="./icons/icon-edit.svg"
+                alt="Edit comment"
+              />
+              <p className="px-2">Edit</p>
+            </StyledEditButton>
+          </Fragment>
+        ) : (
+          <StyledEditButton role="button" onClick={() => console.log('click')}>
+            <img
+              className="h-4"
+              src="./icons/icon-reply.svg"
+              alt="Reply comment"
+            />
+            <p className="px-2">Reply</p>
+          </StyledEditButton>
+        )}
       </StyledCommentFooter>
     </StyledComment>
   )

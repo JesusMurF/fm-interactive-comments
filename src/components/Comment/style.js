@@ -1,6 +1,6 @@
 import tw from 'tailwind-styled-components'
 
-export const CommentHeader = tw.div`
+export const StyledCommentHeader = tw.div`
   h-14
   flex
 `
@@ -11,8 +11,10 @@ export const StyledComment = tw.div`
   rounded-md
   text-2xl
   bg-white
-  m-2
   md:w-1/2
+  m-2
+
+  ${(p) => (p.$primary ? 'ml-10' : '')}
 `
 
 export const StyledImageContainer = tw.div`
@@ -33,6 +35,21 @@ export const StyledUsername = tw.div`
   flex-none
   flex
   items-center
+`
+
+export const StyledLoggedUserBadge = tw.div`
+  flex
+  justify-center
+  text-[10px]
+  items-center
+  uppercase
+  h-5
+  w-10
+  bg-[#5358b6]
+  text-white
+  my-4
+  mx-2
+  rounded-sm
 `
 
 export const StyledTime = tw.div`

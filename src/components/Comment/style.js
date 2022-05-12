@@ -7,14 +7,13 @@ export const StyledCommentHeader = tw.div`
 
 export const StyledComment = tw.div`
   h-auto
-  w-3/4
   rounded-md
   text-2xl
   bg-white
-  md:w-1/2
   m-2
+  flex
 
-  ${(p) => (p.$primary ? 'ml-10' : '')}
+  ${({ isReply }) => (isReply ? 'ml-10' : '')}
 `
 
 export const StyledImageContainer = tw.div`
@@ -65,17 +64,20 @@ export const StyledCommentText = tw.div`
   p-4
   text-sm
   text-gray-500
+  flex
 `
 export const StyledCommentFooter = tw.footer`
   flex
   h-auto
+  md:hidden
 `
 
 export const StyledLikeButtons = tw.div`
-  flex  
-  flex-1
-  items-center
-  p-4
+  flex
+  items-center 
+
+  ${({ vertical }) =>
+    vertical ? 'flex-col w-full justify-center' : 'flex-1 p-4'}
 `
 
 export const StyledDeleteButton = tw.span`

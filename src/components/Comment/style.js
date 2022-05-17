@@ -13,7 +13,7 @@ export const StyledComment = tw.div`
   m-2
   flex
 
-  ${({ isReply }) => (isReply ? 'ml-10' : '')}
+  ${(p) => (p.$isreply ? 'ml-10' : '')}
 `
 
 export const StyledImageContainer = tw.div`
@@ -76,8 +76,7 @@ export const StyledLikeButtons = tw.div`
   flex
   items-center 
 
-  ${({ vertical }) =>
-    vertical ? 'flex-col w-full justify-center' : 'flex-1 p-4'}
+  ${(p) => (p.$vertical ? 'flex-col w-full justify-center' : 'flex-1 p-4')}
 `
 
 export const StyledDeleteButton = tw.span`
@@ -94,4 +93,31 @@ export const StyledEditButton = tw.span`
   items-center
   text-sm
   px-2
+`
+
+export const StyledIncrementButton = tw.button`
+  h-8 
+  bg-[#F3F5F6] 
+  p-1 
+  text-sm 
+  text-[#BFBDDA]
+
+  ${(p) => (p.$vertical ? 'w-8 rounded-t-md' : 'w-6 rounded-l-md ')}
+`
+
+export const StyledDecrementButton = tw.button`
+ h-8 
+ bg-[#F3F5F6] 
+ p-1 
+ text-[#BFBDDA]
+
+  ${(p) => (p.$vertical ? 'w-8 rounded-b-md' : 'w-6  rounded-r-md  ')}
+`
+
+export const StyledNumberedButton = tw.button`
+ bg-[#F3F5F6] 
+ p-1 
+ text-sm
+
+ ${(p) => (p.$vertical ? 'w-8 rounded-b-md' : 'h-8 w-6 rounded-r-md ')}
 `

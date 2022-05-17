@@ -12,21 +12,20 @@ import {
   StyledTime,
   StyledUsername,
   StyledLoggedUserBadge,
+  StyledIncrementButton,
+  StyledNumberedButton,
+  StyledDecrementButton,
 } from './style'
 
 export const Comment = ({ isReply = false, user = false }) => {
   return (
-    <StyledComment isReply={isReply}>
+    <StyledComment $isreply={isReply}>
       {isReply && <hr className="float-left h-[110%] border-l-2" />}
       <div className="hidden items-center justify-center md:flex md:w-1/6">
-        <StyledLikeButtons vertical={true}>
-          <button className="w-8 rounded-t-md bg-[#F3F5F6] p-1 text-sm text-[#BFBDDA]">
-            +
-          </button>
-          <button className="w-8 bg-[#F3F5F6] p-1 text-sm">2</button>
-          <button className="w-8 rounded-b-md bg-[#F3F5F6] p-1 text-[#BFBDDA]">
-            -
-          </button>
+        <StyledLikeButtons $vertical={true}>
+          <StyledIncrementButton $vertical={true}>+</StyledIncrementButton>
+          <StyledNumberedButton $vertical={true}>2</StyledNumberedButton>
+          <StyledDecrementButton $vertical={true}>-</StyledDecrementButton>
         </StyledLikeButtons>
       </div>
       <div className="w-full md:w-5/6">
@@ -47,13 +46,9 @@ export const Comment = ({ isReply = false, user = false }) => {
         </StyledCommentText>
         <StyledCommentFooter>
           <StyledLikeButtons>
-            <button className="h-8 w-6 rounded-l-md bg-[#F3F5F6] text-sm text-[#BFBDDA]">
-              +
-            </button>
-            <button className="h-8 w-6 bg-[#F3F5F6] text-sm">2</button>
-            <button className="h-8 w-6 rounded-r-md bg-[#F3F5F6] text-[#BFBDDA]">
-              -
-            </button>
+            <StyledIncrementButton>+</StyledIncrementButton>
+            <StyledNumberedButton>2</StyledNumberedButton>
+            <StyledDecrementButton>-</StyledDecrementButton>
           </StyledLikeButtons>
           {user ? (
             <Fragment>

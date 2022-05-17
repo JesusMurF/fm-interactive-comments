@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { CommentActions } from '../CommentActions/CommentActions'
 import {
   StyledCommentHeader,
   StyledComment,
@@ -18,7 +19,7 @@ import {
   StyledVerticalLine,
 } from './style'
 
-export const Comment = ({ isReply = true, user = false }) => {
+export const Comment = ({ isReply = true, user = true }) => {
   return (
     <div className="flex">
       <StyledVerticalLine $reply={isReply} />
@@ -38,6 +39,9 @@ export const Comment = ({ isReply = true, user = false }) => {
             <StyledUsername>Amy Robson</StyledUsername>
             {user && <StyledLoggedUserBadge>you</StyledLoggedUserBadge>}
             <StyledTime>one month ago</StyledTime>
+            <CommentActions
+              className="hidden md:flex"
+              user={user}></CommentActions>
           </StyledCommentHeader>
 
           <StyledCommentText>
@@ -52,39 +56,7 @@ export const Comment = ({ isReply = true, user = false }) => {
               <StyledNumberedButton>2</StyledNumberedButton>
               <StyledDecrementButton>-</StyledDecrementButton>
             </StyledLikeButtons>
-            {user ? (
-              <Fragment>
-                <StyledDeleteButton role="button">
-                  <img
-                    className="h-4"
-                    src="./icons/icon-delete.svg"
-                    alt="Delete comment"
-                  />
-                  <p className="px-2">Delete</p>
-                </StyledDeleteButton>
-                <StyledEditButton
-                  role="button"
-                  onClick={() => console.log('click')}>
-                  <img
-                    className="h-4"
-                    src="./icons/icon-edit.svg"
-                    alt="Edit comment"
-                  />
-                  <p className="px-2">Edit</p>
-                </StyledEditButton>
-              </Fragment>
-            ) : (
-              <StyledEditButton
-                role="button"
-                onClick={() => console.log('click')}>
-                <img
-                  className="h-4"
-                  src="./icons/icon-reply.svg"
-                  alt="Reply comment"
-                />
-                <p className="px-2">Reply</p>
-              </StyledEditButton>
-            )}
+            <CommentActions className="md:hidden" user={user}></CommentActions>
           </StyledCommentFooter>
         </div>
       </StyledComment>

@@ -12,8 +12,6 @@ export const StyledComment = tw.div`
   bg-white
   m-2
   flex
-
-  ${(p) => (p.$isreply ? 'ml-10' : '')}
 `
 
 export const StyledImageContainer = tw.div`
@@ -120,4 +118,8 @@ export const StyledNumberedButton = tw.button`
  text-sm
 
  ${(p) => (p.$vertical ? 'w-8 rounded-b-md' : 'h-8 w-6 rounded-r-md ')}
+`
+
+export const StyledVerticalLine = tw.hr`
+  ${(p) => (p.$reply ? 'h-full border-l-4 ml-2' : 'hidden')}
 `

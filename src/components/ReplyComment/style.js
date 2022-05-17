@@ -5,7 +5,7 @@ export const StyledReplyContainer = tw.div`
   bg-white
   w-full
   flex
-  items-center
+  items-start
   justify-center
   rounded-md
   p-4

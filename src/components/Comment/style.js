@@ -78,19 +78,30 @@ export const StyledLikeButtons = tw.div`
 `
 
 export const StyledDeleteButton = tw.span`
-  flex
   h-auto
   items-center
   text-sm
   px-2
+
+  ${(p) => (p.$user ? 'flex' : 'hidden')}
 `
 
 export const StyledEditButton = tw.span`
-  flex
   h-auto
   items-center
   text-sm
   px-2
+
+  ${(p) => (p.$user ? 'flex' : 'hidden')}
+`
+
+export const StyledReplyButton = tw.span`
+  h-auto
+  items-center
+  text-sm
+  px-2
+
+  ${(p) => (p.$user ? 'flex' : 'hidden')}
 `
 
 export const StyledIncrementButton = tw.button`

@@ -3,19 +3,21 @@ import tw from 'tailwind-styled-components'
 export const StyledReplyContainer = tw.div`
   h-auto
   bg-white
-  w-3/4
+  w-full
   flex
   items-center
   justify-center
   rounded-md
-  flex-col
-  md:w-1/2
+  p-4
+  flex-wrap
+  
+  md:flex-nowrap
 `
 
 export const StyledCommentInput = tw.textarea`
   outline-none
   rounded-md
-  w-11/12
+  w-full
   m-2
   h-20
   resize-none
@@ -30,12 +32,23 @@ export const StyledCommentInput = tw.textarea`
   transition 
   ease-in-out 
   delay-300
-`
 
-export const StyledReplyFooter = tw.footer`
-  flex
-  flex-row
-  justify-between
-  w-11/12
-  items-center
+  md:order-2
+`
+export const StyledReplyImageContainer = tw.div`
+  flex 
+  w-1/2 
+  items-center 
+  justify-start 
+  
+  md:order-1 
+  md:w-20
+`
+export const StyledReplyButtonContainer = tw.div`
+  flex 
+  w-1/2 
+  justify-end 
+  
+  md:order-3 
+  md:w-20
 `

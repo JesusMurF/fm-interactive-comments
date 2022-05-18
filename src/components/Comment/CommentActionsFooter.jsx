@@ -3,11 +3,11 @@ import {
   StyledDeleteButton,
   StyledEditButton,
   StyledReplyButton,
-} from '../Comment/style'
+} from './style'
 
-export const CommentActions = ({ user }) => {
+export const CommentActionsFooter = ({ user }) => {
   return (
-    <div className="flex flex-1 justify-end">
+    <div className="flex flex-1 justify-end md:hidden">
       <StyledDeleteButton $user={user} role="button">
         <img
           className="h-4"

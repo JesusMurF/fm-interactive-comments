@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CommentsContainer from './components/CommentsContainer/CommentsContainer'
 
 function App() {
   return (
-    <div>
+    <>
       <CommentsContainer></CommentsContainer>
-    </div>
+    </>
   )
 }
 

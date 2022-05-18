@@ -1,0 +1,623 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should work as expected 1`] = `
+Array [
+  <h1>
+    Hello World
+  </h1>,
+  <div
+    className="flex h-screen flex-col items-center bg-[#f5f6fa] p-2"
+  >
+    <div
+      className="flex"
+    >
+      <hr
+        className="h-full border-l-4 ml-2"
+      />
+      <div
+        className="h-auto rounded-md text-2xl bg-white m-2 flex"
+      >
+        <div
+          className="hidden items-center justify-center md:flex md:w-1/6"
+        >
+          <div
+            className="flex items-center flex-col w-full justify-center"
+          >
+            <button
+              className="h-8 bg-[#F3F5F6] p-1 text-sm text-[#BFBDDA] w-8 rounded-t-md"
+            >
+              +
+            </button>
+            <button
+              className="bg-[#F3F5F6] p-1 text-sm w-8 rounded-b-md"
+            >
+              2
+            </button>
+            <button
+              className="h-8 bg-[#F3F5F6] p-1 text-[#BFBDDA] w-8 rounded-b-md"
+            >
+              -
+            </button>
+          </div>
+        </div>
+        <div
+          className="w-full md:w-5/6"
+        >
+          <div
+            className="h-14 flex"
+          >
+            <div
+              className="align-middle justify-center items-center flex px-4"
+            >
+              <img
+                className="h-10 w-10"
+                src="./images/avatars/image-amyrobson.png"
+              />
+            </div>
+            <div
+              className="text-sm flex-none flex items-center"
+            >
+              Amy Robson
+            </div>
+            <div
+              className="flex justify-center text-[10px] items-center uppercase h-5 w-10 bg-[#5358b6] text-white my-4 mx-2 rounded-sm"
+            >
+              you
+            </div>
+            <div
+              className="text-sm flex-auto text-gray-500 items-center flex px-4"
+            >
+              one month ago
+            </div>
+            <div
+              className="hidden flex-1 justify-end md:flex"
+            >
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                role="button"
+              >
+                <img
+                  alt="Delete comment"
+                  className="h-4"
+                  src="./icons/icon-delete.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Delete
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Edit comment"
+                  className="h-4"
+                  src="./icons/icon-edit.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Edit
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 hidden"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Reply comment"
+                  className="h-4"
+                  src="./icons/icon-reply.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Reply
+                </p>
+              </span>
+            </div>
+          </div>
+          <div
+            className="p-4 text-sm text-gray-500 flex"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident, nostrum doloremque similique natus recusandae, esse modi tempore quia dolore, odit numquam omnis reprehenderit necessitatibus animi ex hic ipsum! Excepturi?
+          </div>
+          <footer
+            className="flex h-auto md:hidden"
+          >
+            <div
+              className="flex items-center flex-1 p-4"
+            >
+              <button
+                className="h-8 bg-[#F3F5F6] p-1 text-sm text-[#BFBDDA] w-6 rounded-l-md"
+              >
+                +
+              </button>
+              <button
+                className="bg-[#F3F5F6] p-1 text-sm h-8 w-6 rounded-r-md"
+              >
+                2
+              </button>
+              <button
+                className="h-8 bg-[#F3F5F6] p-1 text-[#BFBDDA] w-6 rounded-r-md"
+              >
+                -
+              </button>
+            </div>
+            <div
+              className="flex flex-1 justify-end md:hidden"
+            >
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                role="button"
+              >
+                <img
+                  alt="Delete comment"
+                  className="h-4"
+                  src="./icons/icon-delete.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Delete
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Edit comment"
+                  className="h-4"
+                  src="./icons/icon-edit.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Edit
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 hidden"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Reply comment"
+                  className="h-4"
+                  src="./icons/icon-reply.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Reply
+                </p>
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex"
+    >
+      <hr
+        className="h-full border-l-4 ml-2"
+      />
+      <div
+        className="h-auto rounded-md text-2xl bg-white m-2 flex"
+      >
+        <div
+          className="hidden items-center justify-center md:flex md:w-1/6"
+        >
+          <div
+            className="flex items-center flex-col w-full justify-center"
+          >
+            <button
+              className="h-8 bg-[#F3F5F6] p-1 text-sm text-[#BFBDDA] w-8 rounded-t-md"
+            >
+              +
+            </button>
+            <button
+              className="bg-[#F3F5F6] p-1 text-sm w-8 rounded-b-md"
+            >
+              2
+            </button>
+            <button
+              className="h-8 bg-[#F3F5F6] p-1 text-[#BFBDDA] w-8 rounded-b-md"
+            >
+              -
+            </button>
+          </div>
+        </div>
+        <div
+          className="w-full md:w-5/6"
+        >
+          <div
+            className="h-14 flex"
+          >
+            <div
+              className="align-middle justify-center items-center flex px-4"
+            >
+              <img
+                className="h-10 w-10"
+                src="./images/avatars/image-amyrobson.png"
+              />
+            </div>
+            <div
+              className="text-sm flex-none flex items-center"
+            >
+              Amy Robson
+            </div>
+            <div
+              className="flex justify-center text-[10px] items-center uppercase h-5 w-10 bg-[#5358b6] text-white my-4 mx-2 rounded-sm"
+            >
+              you
+            </div>
+            <div
+              className="text-sm flex-auto text-gray-500 items-center flex px-4"
+            >
+              one month ago
+            </div>
+            <div
+              className="hidden flex-1 justify-end md:flex"
+            >
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                role="button"
+              >
+                <img
+                  alt="Delete comment"
+                  className="h-4"
+                  src="./icons/icon-delete.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Delete
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Edit comment"
+                  className="h-4"
+                  src="./icons/icon-edit.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Edit
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 hidden"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Reply comment"
+                  className="h-4"
+                  src="./icons/icon-reply.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Reply
+                </p>
+              </span>
+            </div>
+          </div>
+          <div
+            className="p-4 text-sm text-gray-500 flex"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident, nostrum doloremque similique natus recusandae, esse modi tempore quia dolore, odit numquam omnis reprehenderit necessitatibus animi ex hic ipsum! Excepturi?
+          </div>
+          <footer
+            className="flex h-auto md:hidden"
+          >
+            <div
+              className="flex items-center flex-1 p-4"
+            >
+              <button
+                className="h-8 bg-[#F3F5F6] p-1 text-sm text-[#BFBDDA] w-6 rounded-l-md"
+              >
+                +
+              </button>
+              <button
+                className="bg-[#F3F5F6] p-1 text-sm h-8 w-6 rounded-r-md"
+              >
+                2
+              </button>
+              <button
+                className="h-8 bg-[#F3F5F6] p-1 text-[#BFBDDA] w-6 rounded-r-md"
+              >
+                -
+              </button>
+            </div>
+            <div
+              className="flex flex-1 justify-end md:hidden"
+            >
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                role="button"
+              >
+                <img
+                  alt="Delete comment"
+                  className="h-4"
+                  src="./icons/icon-delete.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Delete
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Edit comment"
+                  className="h-4"
+                  src="./icons/icon-edit.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Edit
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 hidden"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Reply comment"
+                  className="h-4"
+                  src="./icons/icon-reply.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Reply
+                </p>
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex"
+    >
+      <hr
+        className="h-full border-l-4 ml-2"
+      />
+      <div
+        className="h-auto rounded-md text-2xl bg-white m-2 flex"
+      >
+        <div
+          className="hidden items-center justify-center md:flex md:w-1/6"
+        >
+          <div
+            className="flex items-center flex-col w-full justify-center"
+          >
+            <button
+              className="h-8 bg-[#F3F5F6] p-1 text-sm text-[#BFBDDA] w-8 rounded-t-md"
+            >
+              +
+            </button>
+            <button
+              className="bg-[#F3F5F6] p-1 text-sm w-8 rounded-b-md"
+            >
+              2
+            </button>
+            <button
+              className="h-8 bg-[#F3F5F6] p-1 text-[#BFBDDA] w-8 rounded-b-md"
+            >
+              -
+            </button>
+          </div>
+        </div>
+        <div
+          className="w-full md:w-5/6"
+        >
+          <div
+            className="h-14 flex"
+          >
+            <div
+              className="align-middle justify-center items-center flex px-4"
+            >
+              <img
+                className="h-10 w-10"
+                src="./images/avatars/image-amyrobson.png"
+              />
+            </div>
+            <div
+              className="text-sm flex-none flex items-center"
+            >
+              Amy Robson
+            </div>
+            <div
+              className="flex justify-center text-[10px] items-center uppercase h-5 w-10 bg-[#5358b6] text-white my-4 mx-2 rounded-sm"
+            >
+              you
+            </div>
+            <div
+              className="text-sm flex-auto text-gray-500 items-center flex px-4"
+            >
+              one month ago
+            </div>
+            <div
+              className="hidden flex-1 justify-end md:flex"
+            >
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                role="button"
+              >
+                <img
+                  alt="Delete comment"
+                  className="h-4"
+                  src="./icons/icon-delete.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Delete
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Edit comment"
+                  className="h-4"
+                  src="./icons/icon-edit.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Edit
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 hidden"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Reply comment"
+                  className="h-4"
+                  src="./icons/icon-reply.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Reply
+                </p>
+              </span>
+            </div>
+          </div>
+          <div
+            className="p-4 text-sm text-gray-500 flex"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident, nostrum doloremque similique natus recusandae, esse modi tempore quia dolore, odit numquam omnis reprehenderit necessitatibus animi ex hic ipsum! Excepturi?
+          </div>
+          <footer
+            className="flex h-auto md:hidden"
+          >
+            <div
+              className="flex items-center flex-1 p-4"
+            >
+              <button
+                className="h-8 bg-[#F3F5F6] p-1 text-sm text-[#BFBDDA] w-6 rounded-l-md"
+              >
+                +
+              </button>
+              <button
+                className="bg-[#F3F5F6] p-1 text-sm h-8 w-6 rounded-r-md"
+              >
+                2
+              </button>
+              <button
+                className="h-8 bg-[#F3F5F6] p-1 text-[#BFBDDA] w-6 rounded-r-md"
+              >
+                -
+              </button>
+            </div>
+            <div
+              className="flex flex-1 justify-end md:hidden"
+            >
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                role="button"
+              >
+                <img
+                  alt="Delete comment"
+                  className="h-4"
+                  src="./icons/icon-delete.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Delete
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 flex"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Edit comment"
+                  className="h-4"
+                  src="./icons/icon-edit.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Edit
+                </p>
+              </span>
+              <span
+                className="h-auto items-center text-sm px-2 hidden"
+                onClick={[Function]}
+                role="button"
+              >
+                <img
+                  alt="Reply comment"
+                  className="h-4"
+                  src="./icons/icon-reply.svg"
+                />
+                <p
+                  className="px-2"
+                >
+                  Reply
+                </p>
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div
+      className="h-auto bg-white w-full flex items-start justify-center rounded-md p-4 flex-wrap md:flex-nowrap"
+    >
+      <textarea
+        className="outline-none rounded-md w-full m-2 h-20 resize-none py-2 px-4 ring-1 focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder:text-gray-500 hover:ring-2 transition ease-in-out delay-300 md:order-2"
+        placeholder="Add a comment..."
+      />
+      <div
+        className="flex w-1/2 items-center justify-start md:order-1 md:w-20"
+      >
+        <img
+          className="mt-2 mb-4 h-8 w-8 md:h-12 md:w-12"
+          src="./images/avatars/image-juliusomo.png"
+        />
+      </div>
+      <div
+        className="flex w-1/2 justify-end md:order-3 md:w-20"
+      >
+        <button
+          className="text-md mt-2 mb-4 h-10 w-20 rounded-lg bg-[#5358b6] text-xs font-semibold text-white"
+        >
+          SEND
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;

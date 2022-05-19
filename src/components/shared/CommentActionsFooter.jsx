@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  StyledCommentActionsFooterContainer,
   StyledDeleteButton,
   StyledEditButton,
   StyledReplyButton,
@@ -7,7 +8,7 @@ import {
 
 export const CommentActionsFooter = ({ user }) => {
   return (
-    <div className="flex flex-1 justify-end md:hidden">
+    <StyledCommentActionsFooterContainer>
       <StyledDeleteButton $user={user} role="button">
         <img
           className="h-4"
@@ -30,6 +31,6 @@ export const CommentActionsFooter = ({ user }) => {
         <img className="h-4" src="./icons/icon-reply.svg" alt="Reply comment" />
         <p className="px-2">Reply</p>
       </StyledReplyButton>
-    </div>
+    </StyledCommentActionsFooterContainer>
   )
 }

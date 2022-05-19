@@ -4,37 +4,38 @@ import { CommentActionsHeader } from '../shared/CommentActionsHeader'
 import {
   StyledComment,
   StyledCommentHeader,
-  StyledCommentText,
   StyledDecrementButton,
-  StyledImage,
   StyledImageContainer,
   StyledIncrementButton,
   StyledLikeButtons,
-  StyledLoggedUserBadge,
   StyledNumberedButton,
-  StyledTime,
+  StyledImage,
   StyledUsername,
+  StyledLoggedUserBadge,
+  StyledTime,
   StyledCommentFooter,
+  StyledCommentText,
 } from '../shared/style'
-import { ReplyList } from '../ReplyList/ReplyList'
 import {
-  StyledCommentContainer,
-  StyledCommentSection,
-  StyledLikeButtonsContainer,
+  StyledReplyContainer,
+  StyledReplySection,
+  StyledVerticalLine,
 } from './style'
 
-export const Comment = ({ comment: { content, user, createdAt, replies } }) => {
+export const Reply = ({ reply: { content, user, createdAt } }) => {
   return (
-    <StyledCommentContainer>
+    <StyledReplyContainer>
+      <StyledVerticalLine $reply={true} />
       <StyledComment>
-        <StyledLikeButtonsContainer>
+        <div className="hidden items-center justify-center md:flex md:w-2/12">
           <StyledLikeButtons $vertical={true}>
             <StyledIncrementButton $vertical={true}>+</StyledIncrementButton>
             <StyledNumberedButton $vertical={true}>2</StyledNumberedButton>
             <StyledDecrementButton $vertical={true}>-</StyledDecrementButton>
           </StyledLikeButtons>
-        </StyledLikeButtonsContainer>
-        <StyledCommentSection>
+        </div>
+
+        <StyledReplySection>
           <StyledCommentHeader>
             <StyledImageContainer>
               <StyledImage src={user.image.png} />
@@ -54,9 +55,8 @@ export const Comment = ({ comment: { content, user, createdAt, replies } }) => {
             </StyledLikeButtons>
             <CommentActionsFooter user={user}></CommentActionsFooter>
           </StyledCommentFooter>
-        </StyledCommentSection>
+        </StyledReplySection>
       </StyledComment>
-      <ReplyList replies={replies}></ReplyList>
-    </StyledCommentContainer>
+    </StyledReplyContainer>
   )
 }

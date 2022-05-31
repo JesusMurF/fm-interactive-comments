@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  StyledCommentInput,
+  StyledReplyInput,
   StyledReplyContainer,
   StyledReplyImageContainer,
   StyledReplyButtonContainer,
@@ -11,7 +11,7 @@ import {
 export default function ReplyTextBox() {
   return (
     <StyledReplyContainer>
-      <StyledCommentInput placeholder="Add a comment..."></StyledCommentInput>
+      <StyledReplyInput placeholder="Add a comment..."></StyledReplyInput>
       <StyledReplyImageContainer>
         <StyledAvatarImg src="./images/avatars/image-juliusomo.png"></StyledAvatarImg>
       </StyledReplyImageContainer>

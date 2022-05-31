@@ -15,7 +15,7 @@ export const StyledReplyContainer = tw.div`
   md:flex-nowrap
 `
 
-export const StyledCommentInput = tw.textarea`
+export const StyledReplyInput = tw.textarea`
   outline-none
   rounded-md
   w-full

@@ -8,12 +8,12 @@ import {
   StyledSendButton,
 } from './style'
 
-export default function ReplyTextBox() {
+export default function ReplyTextBox({ currentUser: { image } }) {
   return (
     <StyledReplyContainer>
       <StyledReplyInput placeholder="Add a comment..."></StyledReplyInput>
       <StyledReplyImageContainer>
-        <StyledAvatarImg src="./images/avatars/image-juliusomo.png"></StyledAvatarImg>
+        <StyledAvatarImg src={image.png}></StyledAvatarImg>
       </StyledReplyImageContainer>
 
       <StyledReplyButtonContainer>

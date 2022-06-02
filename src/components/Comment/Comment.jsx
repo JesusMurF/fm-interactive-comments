@@ -23,7 +23,10 @@ import {
   StyledLikeButtonsContainer,
 } from './style'
 
-export const Comment = ({ comment: { content, user, createdAt, replies } }) => {
+export const Comment = ({
+  comment: { content, user, createdAt, replies },
+  currentUser,
+}) => {
   return (
     <StyledCommentContainer>
       <StyledComment>
@@ -42,7 +45,7 @@ export const Comment = ({ comment: { content, user, createdAt, replies } }) => {
             <StyledUsername>{user.username}</StyledUsername>
             {user && <StyledLoggedUserBadge>you</StyledLoggedUserBadge>}
             <StyledTime>{createdAt}</StyledTime>
-            <CommentActionsHeader user={user}></CommentActionsHeader>
+            <CommentActionsHeader user={currentUser}></CommentActionsHeader>
           </StyledCommentHeader>
 
           <StyledCommentText>{content}</StyledCommentText>
@@ -56,7 +59,7 @@ export const Comment = ({ comment: { content, user, createdAt, replies } }) => {
           </StyledCommentFooter>
         </StyledCommentSection>
       </StyledComment>
-      <ReplyList replies={replies}></ReplyList>
+      <ReplyList replies={replies} currentUser={currentUser}></ReplyList>
     </StyledCommentContainer>
   )
 }

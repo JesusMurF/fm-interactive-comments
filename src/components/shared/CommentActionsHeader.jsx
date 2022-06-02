@@ -1,4 +1,5 @@
 import React from 'react'
+import { useAuth } from '../../hooks/useAuth'
 import {
   StyledCommentActionsHeaderContainer,
   StyledDeleteButton,
@@ -6,10 +7,12 @@ import {
   StyledReplyButton,
 } from './style'
 
-export const CommentActionsHeader = ({ user }) => {
+export const CommentActionsHeader = (currentUser) => {
+  const { isAuthenticated } = useAuth(currentUser)
+
   return (
     <StyledCommentActionsHeaderContainer>
-      <StyledDeleteButton $user={user} role="button">
+      <StyledDeleteButton $user={isAuthenticated} role="button">
         <img
           className="h-4"
           src="./icons/icon-delete.svg"
@@ -18,14 +21,14 @@ export const CommentActionsHeader = ({ user }) => {
         <p className="px-2">Delete</p>
       </StyledDeleteButton>
       <StyledEditButton
-        $user={user}
+        $user={isAuthenticated}
         role="button"
         onClick={() => console.log('click')}>
         <img className="h-4" src="./icons/icon-edit.svg" alt="Edit comment" />
         <p className="px-2">Edit</p>
       </StyledEditButton>
       <StyledReplyButton
-        $user={!user}
+        $user={!isAuthenticated}
         role="button"
         onClick={() => console.log('click')}>
         <img className="h-4" src="./icons/icon-reply.svg" alt="Reply comment" />
